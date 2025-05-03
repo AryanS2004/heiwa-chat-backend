@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js" type="module"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js" type="module"></script>
+
+    <!-- Your custom scripts -->
+    <script type="module" src="{{ url_for('static', filename='js/firebase-config.js') }}"></script>
+    <!-- Import loginWithGoogle function from script.js -->
+    <script type="module">
+        import { loginWithGoogle } from './static/js/script.js';
+        window.loginWithGoogle = loginWithGoogle;  // Make it globally accessible
+    </script>
+</head>
+<body>
+    <div class="container1">
+        <h2>Hiewa Chat - CyberBullying Free Chat Space</h2>
+        <button onclick="loginWithGoogle()">Login with Google</button>
+    </div>
+</body>
+</html>

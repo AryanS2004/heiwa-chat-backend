@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Chat</h2>
+        
+        <div id="messagesContainer" class="messages-container"></div>
+        <textarea id="message" placeholder="Type a message"></textarea>
+        <button onclick="sendMessage()">Send</button>
+
+        <!-- Loading Indicator -->
+        <div id="loading" style="display: none;">
+            Loading messages...
+        </div>
+    </div>
+
+    <!-- Load the script as a module -->
+    <script type="module" src="{{ url_for('static', filename='js/chat.js') }}"></script>
+</body>
+</html>

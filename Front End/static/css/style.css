@@ -1,0 +1,164 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #181818;
+    margin: 0;
+    padding: 0;
+    background-image: url(sub-zero-scorpion-3840x2160-17601.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h2 {
+    color: #fff;
+}
+
+/* Container styling */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #202020;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+    width: 400px;
+    border-radius: 8px;
+    padding: 30px;
+    
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+/* User Info (for logged-in user) */
+#userInfo {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userInfo p {
+    font-size: 18px;
+}
+
+#userInfo button {
+    background-color: #ff9800;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.messages-container {
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    max-height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #444;
+    border-radius: 5px;
+    color: #fff;
+    word-wrap: break-word;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message strong {
+    font-weight: bold;
+}
+
+/* Message details */
+.message .user {
+    margin-right: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ff9800; /* Placeholder color */
+    display: inline-block;
+}
+
+.message .message-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* User Name */
+.message .message-info strong {
+    color: #ff9800;
+    font-size: 14px;
+}
+
+/* Timestamp */
+.message .message-info small {
+    color: #bbb;
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+}
+
+textarea:focus {
+    outline: none;
+    border: 2px solid #ff9800;
+}
+
+button {
+    background: #1ac9f6;
+    color: #000;
+    font-weight: 600;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 16px;
+    border: 2px solid transparent;
+    transition: 0.4s ease;
+  }
+  button:hover {
+    color: black;
+    border-color:#ff9c1b ;
+    background: #ff9c1b;
+  }
+button:active {
+    transform: scale(0.98);
+}
+
+/* Loading indicator */
+#loading {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
