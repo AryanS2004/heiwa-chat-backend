@@ -19,7 +19,7 @@ function sendMessage() {
     const username = user ? user.displayName : "Anonymous";
 
     // Send message to Flask backend for prediction first
-    fetch('http://127.0.0.1:5000/predict', {
+    fetch('https://heiwa-chat-backend.onrender.com/predict', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
